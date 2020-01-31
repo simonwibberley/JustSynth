@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:counters-cache
-LIBS:fco_v1-cache
+LIBS:ffs-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -18,12 +17,12 @@ $EndDescr
 $Comp
 L 4xxx:4017 U6
 U 1 1 5E2950CC
-P 4000 1500
-F 0 "U6" H 3850 2300 50  0000 C CNN
-F 1 "4017" H 4150 2400 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4000 1500 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 4000 1500 50  0001 C CNN
-	1    4000 1500
+P 4000 1600
+F 0 "U6" H 3850 2400 50  0000 C CNN
+F 1 "4017" H 4150 2500 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4000 1600 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 4000 1600 50  0001 C CNN
+	1    4000 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -55,12 +54,12 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5E2DE56F
-P 4000 2400
-F 0 "#PWR0102" H 4000 2150 50  0001 C CNN
-F 1 "GND" H 4005 2227 50  0000 C CNN
-F 2 "" H 4000 2400 50  0001 C CNN
-F 3 "" H 4000 2400 50  0001 C CNN
-	1    4000 2400
+P 4000 2500
+F 0 "#PWR0102" H 4000 2250 50  0001 C CNN
+F 1 "GND" H 4005 2327 50  0000 C CNN
+F 2 "" H 4000 2500 50  0001 C CNN
+F 3 "" H 4000 2500 50  0001 C CNN
+	1    4000 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -74,10 +73,6 @@ F 3 "" H 1300 3050 50  0001 C CNN
 	1    1300 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 2550 4800 1100
-Wire Wire Line
-	4800 1100 4500 1100
 $Comp
 L 4xxx:4017 U7
 U 1 1 5E320DDE
@@ -87,17 +82,6 @@ F 1 "4017" H 4000 4990 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4000 4100 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 4000 4100 50  0001 C CNN
 	1    4000 4100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L 4xxx:4051 U3
-U 1 1 5E326200
-P 2450 4200
-F 0 "U3" H 2450 5281 50  0000 C CNN
-F 1 "4051" H 2450 5190 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 2450 4200 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 2450 4200 50  0001 C CNN
-	1    2450 4200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -111,8 +95,6 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms
 	1    3750 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 1000 4900 1000
 $Comp
 L 4xxx_IEEE:4015 U1
 U 2 1 5E37D2A5
@@ -125,58 +107,30 @@ F 3 "" H 1300 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 1900 3450 2550
+	3450 2000 3450 2450
 Wire Wire Line
 	4900 3150 3450 3150
 Wire Wire Line
 	3450 3150 3450 3050
 Wire Wire Line
-	4900 1000 4900 3150
-Wire Wire Line
-	2950 4700 3000 4700
+	4900 1100 4900 3150
 Wire Wire Line
 	3000 5350 1850 5350
 Wire Wire Line
-	2950 4600 3050 4600
-Wire Wire Line
-	2950 4500 3100 4500
-Wire Wire Line
 	3100 5550 1850 5550
-Wire Wire Line
-	3500 3600 2950 3600
-Wire Wire Line
-	3500 3700 2950 3700
-Wire Wire Line
-	3500 3800 2950 3800
-Wire Wire Line
-	3500 3900 2950 3900
-Wire Wire Line
-	3500 4000 2950 4000
-Wire Wire Line
-	3500 4100 2950 4100
-Wire Wire Line
-	3500 4200 2950 4200
-Wire Wire Line
-	3500 4300 2950 4300
 Wire Wire Line
 	4500 3600 4500 2950
 Wire Wire Line
 	4500 2950 4050 2950
 Wire Wire Line
-	3450 2550 4800 2550
-Connection ~ 3450 2550
+	3450 2450 4500 2450
+Connection ~ 3450 2450
 Wire Wire Line
-	3450 2550 3450 2850
-Wire Wire Line
-	3350 1000 3350 3250
+	3450 2450 3450 2850
 Wire Wire Line
 	3350 3250 4600 3250
 Wire Wire Line
-	4600 3250 4600 3900
-Wire Wire Line
 	4600 3900 4500 3900
-Wire Wire Line
-	3350 1000 3500 1000
 $Comp
 L power:GND #PWR0103
 U 1 1 5E44FE63
@@ -188,10 +142,6 @@ F 3 "" H 4500 3700 50  0001 C CNN
 	1    4500 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 4400 3400 4400
-Wire Wire Line
-	3400 4400 3400 5550
 Wire Wire Line
 	3400 5550 4700 5550
 Wire Wire Line
@@ -212,20 +162,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 1200 1950 1450
 Wire Wire Line
-	2350 5100 2450 5100
-$Comp
-L power:GND #PWR0104
-U 1 1 5E4F2D9B
-P 2450 5100
-F 0 "#PWR0104" H 2450 4850 50  0001 C CNN
-F 1 "GND" H 2455 4927 50  0000 C CNN
-F 2 "" H 2450 5100 50  0001 C CNN
-F 3 "" H 2450 5100 50  0001 C CNN
-	1    2450 5100
-	1    0    0    -1  
-$EndComp
-Connection ~ 2450 5100
-Wire Wire Line
 	2350 2700 2450 2700
 Connection ~ 2450 2700
 $Comp
@@ -237,17 +173,6 @@ F 1 "+12V" H 2465 1073 50  0000 C CNN
 F 2 "" H 2450 900 50  0001 C CNN
 F 3 "" H 2450 900 50  0001 C CNN
 	1    2450 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0106
-U 1 1 5E4F9D9A
-P 2450 3300
-F 0 "#PWR0106" H 2450 3150 50  0001 C CNN
-F 1 "+12V" H 2600 3250 50  0000 C CNN
-F 2 "" H 2450 3300 50  0001 C CNN
-F 3 "" H 2450 3300 50  0001 C CNN
-	1    2450 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -264,12 +189,12 @@ $EndComp
 $Comp
 L power:+12V #PWR0108
 U 1 1 5E4FB2DD
-P 4000 700
-F 0 "#PWR0108" H 4000 550 50  0001 C CNN
-F 1 "+12V" H 4015 873 50  0000 C CNN
-F 2 "" H 4000 700 50  0001 C CNN
-F 3 "" H 4000 700 50  0001 C CNN
-	1    4000 700 
+P 4000 800
+F 0 "#PWR0108" H 4000 650 50  0001 C CNN
+F 1 "+12V" H 4015 973 50  0000 C CNN
+F 2 "" H 4000 800 50  0001 C CNN
+F 3 "" H 4000 800 50  0001 C CNN
+	1    4000 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -283,10 +208,8 @@ F 3 "" H 4000 5000 50  0001 C CNN
 	1    4000 5000
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 1000 0    50   Input ~ 0
+Text GLabel 5500 3550 2    50   Input ~ 0
 SigIn
-Text GLabel 4900 3150 2    50   Input ~ 0
-FreqMultOut
 $Comp
 L 4xxx:4081 U5
 U 5 1 5E4F12D8
@@ -332,8 +255,6 @@ Text GLabel 750  5400 0    50   Input ~ 0
 D1B
 Text GLabel 750  5550 0    50   Input ~ 0
 MR1
-Wire Wire Line
-	3350 1000 1550 1000
 Connection ~ 1950 2750
 Wire Wire Line
 	1950 2750 1950 3250
@@ -360,8 +281,6 @@ F 3 "~" H 1950 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1950 3550 1950 3600
-Wire Wire Line
 	3050 2300 3050 3000
 Wire Wire Line
 	1850 3000 3050 3000
@@ -370,35 +289,24 @@ Wire Wire Line
 Wire Wire Line
 	1850 3100 3000 3100
 Wire Wire Line
-	3150 3200 3150 2100
-Wire Wire Line
 	2950 2100 3150 2100
 Wire Wire Line
 	1850 3200 3150 3200
 Wire Wire Line
-	3050 4600 3050 5250
-Wire Wire Line
 	1850 5250 3050 5250
-Wire Wire Line
-	3000 4700 3000 5350
-Wire Wire Line
-	2950 4800 2950 5450
 Wire Wire Line
 	2950 5450 1850 5450
 Wire Wire Line
-	3100 4500 3100 5550
-Wire Wire Line
-	4700 1300 4500 1300
+	4700 1400 4500 1400
 Wire Wire Line
 	4700 4400 4700 2750
 Connection ~ 4700 2750
 Wire Wire Line
 	1950 2750 4700 2750
 Wire Wire Line
-	4700 2750 4700 1300
+	4700 2750 4700 1400
 Wire Wire Line
-	3500 1900 3450 1900
-Connection ~ 3350 1000
+	3500 2000 3450 2000
 Wire Wire Line
 	2950 2200 3100 2200
 Wire Wire Line
@@ -551,7 +459,7 @@ FreqMulOut
 Wire Wire Line
 	4200 6250 4050 6250
 $Comp
-L eurorack:EURO_PWR_2x5 J1
+L euroraack:EURO_PWR_2x5 J1
 U 1 1 5E6D0E91
 P 1300 6300
 F 0 "J1" H 1300 6747 60  0000 C CNN
@@ -682,23 +590,6 @@ SigIn
 Text GLabel 5450 1200 0    50   Input ~ 0
 FreqDivOut
 Wire Wire Line
-	3450 1900 2950 1900
-Connection ~ 3450 1900
-Wire Wire Line
-	2950 1800 3500 1800
-Wire Wire Line
-	3500 1700 2950 1700
-Wire Wire Line
-	2950 1600 3500 1600
-Wire Wire Line
-	3500 1500 2950 1500
-Wire Wire Line
-	2950 1400 3500 1400
-Wire Wire Line
-	3500 1300 2950 1300
-Wire Wire Line
-	2950 1200 3500 1200
-Wire Wire Line
 	4850 6450 4850 6650
 Wire Wire Line
 	4050 6650 4850 6650
@@ -827,13 +718,13 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms
 $EndComp
 $Comp
 L 4xxx:4081 U5
-U 2 1 5E678CBB
+U 3 1 5E678CBB
 P 9350 2950
 F 0 "U5" H 9350 3275 50  0000 C CNN
 F 1 "4081" H 9350 3184 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9350 2950 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 9350 2950 50  0001 C CNN
-	2    9350 2950
+	3    9350 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1115,19 +1006,19 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x10_Male J2
 U 1 1 5E720B71
-P 5850 4050
-F 0 "J2" H 5958 4631 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 5958 4540 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 5850 4050 50  0001 C CNN
-F 3 "~" H 5850 4050 50  0001 C CNN
-	1    5850 4050
+P 6500 4050
+F 0 "J2" H 6608 4631 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 6608 4540 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 6500 4050 50  0001 C CNN
+F 3 "~" H 6500 4050 50  0001 C CNN
+	1    6500 4050
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5650 3650 0    50   Input ~ 0
+Text GLabel 6300 3650 0    50   Input ~ 0
 FreqMultOut
-Text GLabel 5650 3750 0    50   Input ~ 0
+Text GLabel 6300 3750 0    50   Input ~ 0
 SigIn
-Text GLabel 5650 3850 0    50   Input ~ 0
+Text GLabel 6300 3850 0    50   Input ~ 0
 FreqDivOut
 $Comp
 L Connector:TestPoint TP6
@@ -1142,18 +1033,139 @@ F 3 "~" H 5650 2500 50  0001 C CNN
 $EndComp
 Text GLabel 6350 2900 0    50   Input ~ 0
 CP1
-Text GLabel 5650 3950 0    50   Input ~ 0
+Text GLabel 6300 3950 0    50   Input ~ 0
 CP1
-Text GLabel 5650 4050 0    50   Input ~ 0
+Text GLabel 6300 4050 0    50   Input ~ 0
 MR1
-Text GLabel 5650 4150 0    50   Input ~ 0
+Text GLabel 6300 4150 0    50   Input ~ 0
 D1A
-Text GLabel 5650 4250 0    50   Input ~ 0
+Text GLabel 6300 4250 0    50   Input ~ 0
 D1B
-Text GLabel 5650 4350 0    50   Input ~ 0
+Text GLabel 6300 4350 0    50   Input ~ 0
 D2A
-Text GLabel 5650 4450 0    50   Input ~ 0
+Text GLabel 6300 4450 0    50   Input ~ 0
 D2B
-Text GLabel 5650 4550 0    50   Input ~ 0
+Text GLabel 6300 4550 0    50   Input ~ 0
 GND
+Text GLabel 4900 2750 2    50   Input ~ 0
+FreqMultOut
+Wire Wire Line
+	2950 1200 3500 1200
+Wire Wire Line
+	2950 1300 3500 1300
+Wire Wire Line
+	2950 1400 3500 1400
+Wire Wire Line
+	2950 1500 3500 1500
+Wire Wire Line
+	2950 1600 3500 1600
+Wire Wire Line
+	2950 1700 3500 1700
+Wire Wire Line
+	2950 1800 3500 1800
+Wire Wire Line
+	2950 1900 3500 1900
+Wire Wire Line
+	3150 3200 3150 2100
+Wire Wire Line
+	4500 1200 4500 2450
+Connection ~ 4900 3150
+Wire Wire Line
+	4500 1100 4900 1100
+Wire Wire Line
+	3500 1100 3350 1100
+Wire Wire Line
+	3350 1100 3350 3250
+Wire Wire Line
+	4600 3650 4600 3900
+Wire Wire Line
+	4600 3250 4600 3650
+Connection ~ 4600 3650
+Wire Wire Line
+	4600 3650 4900 3650
+Wire Wire Line
+	4900 3450 4900 3150
+$Comp
+L 4xxx:4081 U?
+U 2 1 5E413145
+P 5200 3550
+F 0 "U?" H 5200 3875 50  0000 C CNN
+F 1 "4081" H 5200 3784 50  0000 C CNN
+F 2 "" H 5200 3550 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 5200 3550 50  0001 C CNN
+	2    5200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4600 3100 5550
+Wire Wire Line
+	3050 4700 3050 5250
+Wire Wire Line
+	3000 4800 3000 5350
+Wire Wire Line
+	2950 4900 2950 5450
+Connection ~ 2450 5200
+$Comp
+L power:GND #PWR0104
+U 1 1 5E4F2D9B
+P 2450 5200
+F 0 "#PWR0104" H 2450 4950 50  0001 C CNN
+F 1 "GND" H 2455 5027 50  0000 C CNN
+F 2 "" H 2450 5200 50  0001 C CNN
+F 3 "" H 2450 5200 50  0001 C CNN
+	1    2450 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5200 2450 5200
+Wire Wire Line
+	2950 4600 3100 4600
+Wire Wire Line
+	1950 3550 1950 3700
+$Comp
+L power:+12V #PWR0106
+U 1 1 5E4F9D9A
+P 2450 3400
+F 0 "#PWR0106" H 2450 3250 50  0001 C CNN
+F 1 "+12V" H 2600 3350 50  0000 C CNN
+F 2 "" H 2450 3400 50  0001 C CNN
+F 3 "" H 2450 3400 50  0001 C CNN
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4700 3050 4700
+Wire Wire Line
+	2950 4800 3000 4800
+$Comp
+L 4xxx:4051 U3
+U 1 1 5E326200
+P 2450 4300
+F 0 "U3" H 2450 5381 50  0000 C CNN
+F 1 "4051" H 2450 5290 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 2450 4300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 2450 4300 50  0001 C CNN
+	1    2450 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3700 3500 3700
+Wire Wire Line
+	2950 3800 3500 3800
+Wire Wire Line
+	2950 3900 3500 3900
+Wire Wire Line
+	2950 4000 3500 4000
+Wire Wire Line
+	2950 4100 3500 4100
+Wire Wire Line
+	2950 4200 3500 4200
+Wire Wire Line
+	3500 4300 2950 4300
+Wire Wire Line
+	3500 4500 3400 4500
+Wire Wire Line
+	3400 4500 3400 5550
+Wire Wire Line
+	3500 4400 2950 4400
 $EndSCHEMATC

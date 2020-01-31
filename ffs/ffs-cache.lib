@@ -354,11 +354,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# eurorack_EURO_PWR_2x5
+# euroraack_EURO_PWR_2x5
 #
-DEF eurorack_EURO_PWR_2x5 J 0 40 Y Y 1 F N
+DEF euroraack_EURO_PWR_2x5 J 0 40 Y Y 1 F N
 F0 "J" 0 -300 60 H V C CNN
-F1 "eurorack_EURO_PWR_2x5" 0 300 60 H V C CNN
+F1 "euroraack_EURO_PWR_2x5" 0 300 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
