@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name euroraack)(type Legacy)(uri /home/sw206/git/eurocad/eurocad.lib)(options "")(descr ""))
+)
